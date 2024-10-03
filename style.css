@@ -10,7 +10,12 @@ body {
     background-color: var(--bg);
     font-family: 'Inter', sans-serif;
     color: white;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 1.5rem; /* Increase the base font size */
 }
 
 div {
@@ -24,35 +29,33 @@ div {
 }
 
 #pfp {
-    height: 8rem;
-    border-radius: 4rem;
+    height: 12rem; /* Increase the height */
+    border-radius: 6rem; /* Adjust border-radius accordingly */
 }
 
-
 #username > p {
-    font-size: 1rem;
+    font-size: 1.5rem; /* Increase font size */
     font-weight: bold;
     margin-bottom: 0px;
-    margin-top: 0.5rem;
+    margin-top: 0.75rem; /* Adjust margin */
 }
 
 #description > p {
     color: var(--description);
-    font-size: 0.7rem;
-    margin-top: 0.3rem;
-
+    font-size: 1.05rem; /* Increase font size */
+    margin-top: 0.45rem; /* Adjust margin */
 }
 
 .button {
     background-color: var(--btn);
     border: none;
-    margin-top: 0.7rem;
-    height: 2.5rem;
-    width: 30rem;
+    margin-top: 1.05rem; /* Adjust margin */
+    height: 3.75rem; /* Increase height */
+    width: 45rem; /* Increase width */
     color: white;
-    font-size: 0.8rem;
+    font-size: 1.2rem; /* Increase font size */
     font-weight: bold;
-    border-radius: 3px;
+    border-radius: 4.5px; /* Adjust border-radius */
     opacity: 90%;
     transition: transform 120ms ease-in;
 }
@@ -67,5 +70,6 @@ div {
 }
 
 #icons > a {
-    margin: 1rem 0.5rem;
+    margin: 1.5rem 1rem;
 }
+
