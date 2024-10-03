@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap');
+
+:root {
+    --bg: #2b2625;
+    --description: #a7a7a7;
+    --btn: #171614;
+} 
+
+body {
+    background-color: var(--bg);
+    font-family: 'Inter', sans-serif;
+    color: white;
+    
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: block;
+}
+
+#pfp {
+    height: 8rem;
+    border-radius: 4rem;
+}
+
+
+#username > p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 0.5rem;
+}
+
+#description > p {
+    color: var(--description);
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+
+}
+
+.button {
+    background-color: var(--btn);
+    border: none;
+    margin-top: 0.7rem;
+    height: 2.5rem;
+    width: 30rem;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 3px;
+    opacity: 90%;
+    transition: transform 120ms ease-in;
+}
+
+.button:hover {
+    transform: scale(1.025);
+}
+
+#icons {
+    display: flex;
+    justify-content: center;
+}
+
+#icons > a {
+    margin: 1rem 0.5rem;
+}
