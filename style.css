@@ -4,72 +4,184 @@
     --bg: #2b2625;
     --description: #a7a7a7;
     --btn: #171614;
-} 
+    --text-color: white;
+}
 
 body {
     background-color: var(--bg);
     font-family: 'Inter', sans-serif;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    color: var(--text-color);
     margin: 0;
-    font-size: 1.5rem; /* Increase the base font size */
-}
-
-div {
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 .wrapper {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    transform: scale(1.5);
 }
 
 #pfp {
-    height: 12rem; /* Increase the height */
-    border-radius: 6rem; /* Adjust border-radius accordingly */
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
 }
 
 #username > p {
-    font-size: 1.5rem; /* Increase font size */
+    font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 0px;
-    margin-top: 0.75rem; /* Adjust margin */
+    margin: 0.75rem 0 0;
 }
 
 #description > p {
     color: var(--description);
-    font-size: 1.05rem; /* Increase font size */
-    margin-top: 0.45rem; /* Adjust margin */
+    font-size: 1.05rem;
+    margin: 0.45rem 0;
+}
+
+.button-div {
+    width: 100%;
+    margin: 0.5rem 0;
 }
 
 .button {
     background-color: var(--btn);
     border: none;
-    margin-top: 1.05rem; /* Adjust margin */
-    height: 3.75rem; /* Increase height */
-    width: 45rem; /* Increase width */
-    color: white;
-    font-size: 1.2rem; /* Increase font size */
-    font-weight: bold;
-    border-radius: 4.5px; /* Adjust border-radius */
-    opacity: 90%;
-    transition: transform 120ms ease-in;
+    height: 3.5rem;
+    width: 400px;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 4px;
+    opacity: 0.9;
+    transition: transform 120ms ease-in, opacity 120ms ease-in;
+    letter-spacing: 0.05rem;
 }
 
 .button:hover {
     transform: scale(1.025);
+    opacity: 1;
 }
 
 #icons {
     display: flex;
     justify-content: center;
+    margin-top: 0.5rem;
 }
 
 #icons > a {
-    margin: 1.5rem 1rem;
+    margin: 0;
 }
 
+@media (min-width: 768px) {
+    body {
+        font-size: 1rem;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #pfp {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    #username > p {
+        font-size: 1rem;
+    }
+
+    #description > p {
+        font-size: 0.85rem;
+    }
+
+    .button {
+        height: 2.5rem;
+        font-size: 0.9rem;
+    }
+
+    #icons > a {
+        margin: 0 0.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    #username > p {
+        font-size: 1.3rem;
+    }
+
+    #description > p {
+        font-size: 1rem;
+    }
+
+    .button {
+        height: 3rem;
+        font-size: 1rem;
+    }
+
+    #icons > a {
+        margin: 0 0.75rem;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    #pfp {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    #username > p {
+        font-size: 1.2rem;
+    }
+
+    #description > p {
+        font-size: 1rem;
+    }
+
+    .button {
+        height: 3rem;
+        font-size: 1.1rem;
+    }
+
+    #icons > a {
+        margin: 0 0.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 1rem;
+    }
+
+    #pfp {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    #username > p {
+        font-size: 1rem;
+    }
+
+    #description > p {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        height: 2.5rem;
+        font-size: 0.9rem;
+    }
+
+    #icons > a {
+        margin: 0 0.2rem;
+    }
+}
