@@ -78,110 +78,93 @@ body {
 }
 
 #icons > a {
-    margin: 0;
+    margin: 0 0.5rem;
 }
-
-@media (min-width: 768px) {
+/* For tablets (portrait and landscape) */
+@media (max-width: 1024px) {
     body {
-        font-size: 1rem;
-        width: 100vw;
-        height: 100vh;
+        font-size: 1.2rem; /* Adjust base font size */
+    }
+
+    .wrapper {
+        transform: scale(1.2); /* Adjust scale */
     }
 
     #pfp {
-        width: 8rem;
-        height: 8rem;
+        width: 8rem; /* Adjust width */
+        height: 8rem; /* Adjust height */
     }
 
     #username > p {
-        font-size: 1rem;
+        font-size: 1.3rem; /* Adjust font size */
     }
 
     #description > p {
-        font-size: 0.85rem;
+        font-size: 1rem; /* Adjust font size */
     }
 
     .button {
-        height: 2.5rem;
-        font-size: 0.9rem;
+        height: 3rem; /* Adjust height */
+        width: 90%; /* Make button width 90% of its container */
+        font-size: 1rem; /* Adjust font size */
+        letter-spacing: 0.1rem; /* Adjust letter spacing */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #icons > a {
-        margin: 0 0.5rem;
+        margin: 1rem 0.75rem; /* Adjust margin */
     }
 }
 
-@media (min-width: 1024px) {
-    #username > p {
-        font-size: 1.3rem;
-    }
-
-    #description > p {
-        font-size: 1rem;
-    }
-
-    .button {
-        height: 3rem;
-        font-size: 1rem;
-    }
-
-    #icons > a {
-        margin: 0 0.75rem;
-    }
-}
-
-@media (max-width: 767px) {
+/* For phones (portrait and landscape) */
+@media (max-width: 768px) {
     body {
-        font-size: 1.2rem;
+        font-size: 1rem; /* Adjust base font size */
+    }
+
+    .wrapper {
+        transform: scale(1); /* Adjust scale */
     }
 
     #pfp {
-        width: 9rem;
-        height: 9rem;
+        width: 6rem; /* Adjust width */
+        height: 6rem; /* Adjust height */
     }
 
     #username > p {
-        font-size: 1.2rem;
+        font-size: 1.1rem; /* Adjust font size */
     }
 
     #description > p {
-        font-size: 1rem;
+        font-size: 0.9rem; /* Adjust font size */
     }
 
     .button {
-        height: 3rem;
-        font-size: 1.1rem;
+        height: 2.5rem; /* Adjust height */
+        width: 90%; /* Make button width 90% of its container */
+        font-size: 0.9rem; /* Adjust font size */
+        letter-spacing: 0.1rem; /* Adjust letter spacing */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #icons > a {
-        margin: 0 0.25rem;
+        margin: 0.75rem 0.5rem; /* Adjust margin */
     }
 }
 
-@media (max-width: 480px) {
-    body {
-        font-size: 1rem;
-    }
-
-    #pfp {
-        width: 7rem;
-        height: 7rem;
-    }
-
-    #username > p {
-        font-size: 1rem;
-    }
-
-    #description > p {
-        font-size: 0.9rem;
-    }
-
+/* For very small screens (portrait and landscape) */
+@media (max-width: 450px) {
     .button {
-        height: 2.5rem;
-        font-size: 0.9rem;
+        width: 100%; /* Make button width 100% of its container */
+        font-size: 0.8rem; /* Adjust font size */
+        letter-spacing: 0.1rem; /* Adjust letter spacing */
     }
 
     #icons > a {
-        margin: 0 0.2rem;
+        margin: 0.5rem 0.25rem; /* Adjust margin */
     }
 }
