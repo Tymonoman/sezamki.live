@@ -151,6 +151,10 @@ body {
         align-items: center;
     }
 
+    .button-div a {
+        text-decoration: none; /* Remove underline from links */
+    }
+
     #icons > a {
         margin: 0.75rem 0.5rem; /* Adjust margin */
     }
@@ -162,6 +166,10 @@ body {
         width: 100%; /* Make button width 100% of its container */
         font-size: 0.8rem; /* Adjust font size */
         letter-spacing: 0.1rem; /* Adjust letter spacing */
+    }
+
+    .button-div a {
+        text-decoration: none; /* Remove underline from links */
     }
 
     #icons > a {
